@@ -1,0 +1,39 @@
+# ==============================================================================
+# Enterprise RAG - .gitignore
+# ==============================================================================
+
+# Virtual Environments
+enterprise_env/
+enterprise-rag/
+venv/
+.venv/
+env/
+
+# Environment variables & API keys (DO NOT COMMIT)
+.env
+.env.*
+*.env
+!.env.example
+
+# Observability credentials & logs
+.logfire/
+*.log
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Builds & Distribution
+build/
+dist/
+*.egg-info/
+
+DATA/

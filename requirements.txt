@@ -1,0 +1,50 @@
+# ==============================================================================
+# 🤖 ENTERPRISE AGENTIC RAG - REQUIREMENTS
+# ==============================================================================
+
+# --- CORE API & WEB FRAMEWORK ---
+fastapi                         # High-performance web framework
+uvicorn[standard]               # ASGI server to run the FastAPI app
+python-dotenv                   # For loading configuration from .env
+requests                        # HTTP library for internal service calls
+streamlit                       # Frontend dashboard for the chat interface
+numpy                           # Numerical processing
+pytz                            # Timezone handling for logs
+nest-asyncio                    # Support for nested async loops in notebooks
+dotenv
+# --- GOOGLE CLOUD PLATFORM (GCP) ---
+google-cloud-storage            # GCS for Raw and Processed file storage
+google-cloud-aiplatform         # Vertex AI (Embeddings & Ranking)
+google-cloud-discoveryengine    # Vertex AI Search services
+google-cloud-documentai         # OCR & PDF Parsing via Cloud API (Reports/Fallback)
+cloud-sql-python-connector      # Secure connection to Cloud SQL (Postgres)
+
+# --- VECTOR DB & RETRIEVAL ---
+qdrant-client                   # Vector Database for semantic search
+flashrank                       # Ultra-fast local cross-encoder for search reranking
+redis                           # Memorystore for semantic caching
+sqlalchemy                      # ORM for persistent conversation history
+pg8000                          # Postgres driver for Cloud SQL
+
+# --- LANGCHAIN & AGENTIC ORCHESTRATION ---
+langchain                       # Core LLM orchestration
+langgraph                       # State-machine logic for cyclic agent workflows
+langchain-google-vertexai       # Integration for Google LLMs/Embeddings
+langchain-groq                  # Integration for lightning-fast Llama 3
+langchain-community             # Community-contributed tools and loaders
+langchain-openai                # (Optional) OpenAI compatibility layer
+pydantic>=2.0.0                 # Data validation and settings management
+
+# --- DATA INGESTION & OFFICE PARSING ---
+unstructured                    # Base library for document partitioning
+python-pptx                     # Parser for PowerPoint files
+python-docx                     # Parser for Word documents
+pypdf                           # PDF manipulation for splitting large files
+beautifulsoup4                  # High-speed HTML text extraction
+
+# --- OBSERVABILITY & DISTRIBUTED TRACING ---
+langsmith                       # Specialized tracing for LangChain/LangGraph
+logfire                         # Pydantic Logfire for distributed system tracing
+logfire[fastapi]                # Automatic Logfire instrumentation for FastAPI
+logfire[requests]               # To link Streamlit UI traces to the backend
+loguru                          # Enhanced logging for Python

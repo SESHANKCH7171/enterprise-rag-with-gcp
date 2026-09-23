@@ -83,6 +83,8 @@ def process_file(file_path: str, filename: str, source_type: str):
                 # pyrefly: ignore [missing-import]
                 from app.ingestion.loaders.office import parse_office
                 full_text = parse_office(file_path)
+            elif ext in ['txt', 'md', 'markdown']:
+                full_text = parse_text(file_path)
             else:
                 logfire.warning(f"⏩ Skipping unsupported file type: {filename}")
                 return

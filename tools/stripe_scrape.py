@@ -10,7 +10,7 @@ import requests
 BASE = "https://docs.stripe.com"
 LLMS_URL = f"{BASE}/llms.txt"
 
-OUTPUT_DIR = Path("DATA/true_data/stripe")
+OUTPUT_DIR = Path("enterprise-rag/DATA/true_data/stripe")
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 session = requests.Session()

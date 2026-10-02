@@ -30,7 +30,8 @@ pg8000                          # Postgres driver for Cloud SQL
 langchain                       # Core LLM orchestration
 langgraph                       # State-machine logic for cyclic agent workflows
 langchain-google-vertexai       # Integration for Google LLMs/Embeddings
-langchain-groq                  # Integration for lightning-fast Llama 3
+langchain-groq                  # Integration for lightning-fast Llama 3 / GPT-OSS
+groq                            # Direct Groq SDK client
 langchain-community             # Community-contributed tools and loaders
 langchain-openai                # (Optional) OpenAI compatibility layer
 pydantic>=2.0.0                 # Data validation and settings management
@@ -48,3 +49,14 @@ logfire                         # Pydantic Logfire for distributed system tracin
 logfire[fastapi]                # Automatic Logfire instrumentation for FastAPI
 logfire[requests]               # To link Streamlit UI traces to the backend
 loguru                          # Enhanced logging for Python
+
+# --- GUARDRAIL SYSTEM ---
+nemoguardrails
+portkey-ai
+
+# --- EVALUATION (EVALS) ---
+ragas
+deepeval
+sentence-transformers
+
+
